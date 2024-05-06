@@ -7,6 +7,8 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    color: white;
+    font-family: "Plain Light";
 }
 
 html, body{
@@ -20,6 +22,18 @@ html, body{
     position: fixed;
     z-index: 9999;
     background-color: var(--loderbg);
+    padding: 25vh 10vw;
+}
+
+.line{
+    height: fit-content;
+    background-color: red;
+}
+
+.line h1{
+    font-size: 6.5vw;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 main{
