@@ -16,11 +16,23 @@ html, body{
     width: 100%;
 }
 
+#curser{
+    height: 3.1vw;
+    width: 3.1vw;
+    border-radius: 50%;
+    background-color: white;
+    /* border: 1px solid white; */
+    position: fixed;
+    z-index: 999 !important;
+    mix-blend-mode: difference;
+    transform: translate(-50%,-50%);
+}
+
 #loader{
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     background-color: var(--loderbg);
     padding: 25vh 10vw;
     overflow: hidden;
@@ -116,8 +128,64 @@ main{
     background-color: var(--loderbg);
 }
 
+/*page 1*/
+
 .page1{
     height: 100vh;
     width: 100vw;
     background-color: var(--background);
+}
+
+.page1 .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3vw 5.5vw;
+}
+
+.nav-part2 , .nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.nav-part2 h4{
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.hero{
+    width: 77%;
+    margin-left: 23%;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero:nth-child(2){
+    margin-top: 20vh;
+}
+
+.hero h1, .hero h2, .hero h3{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+
+#hero3 h2{
+    /* background-color: red; */
+    z-index: 9999;
+    border-bottom: solid white 0.6rem;
+    transition: color border 0.3s ease; 
+}
+
+#hero3 h2:hover{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    font-weight: 400;
+    border-bottom: none;
+    z-index: 9999;
 }

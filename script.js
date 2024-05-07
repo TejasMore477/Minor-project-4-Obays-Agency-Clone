@@ -53,7 +53,36 @@ function loaderAnimations(){
         display:'none',
     })
 
+    tl.from(".nav",{
+        opacity:0,
+        duration:0.5,
+        delay:0.3,
+    })
+
+    tl.from("#hero1 h1,#hero2 h1,#hero4 h1,#hero3 h2, #hero3 h3",{
+        y:130,
+        stagger:0.2,
+    })
+
 }
 
 loaderAnimations();
+
+function cursorAnimation(){
+    document.addEventListener("mousemove", (position) => {
+        gsap.to("#curser",{
+            left:position.x,
+            top:position.y,
+        })
+    })
+    
+    
+    Shery.makeMagnet(".page1 .nav .nav-part1 svg", {
+    });
+    
+    Shery.makeMagnet(".page1 .nav .nav-part2 h4", {
+    });
+}
+
+cursorAnimation();
 
