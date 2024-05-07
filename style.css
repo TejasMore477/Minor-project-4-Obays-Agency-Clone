@@ -1,6 +1,6 @@
 :root{
     --background:#151515;
-    --loderbg:#0B0B0B;
+    --loderbg:#000000;
 }
 
 *{
@@ -23,23 +23,97 @@ html, body{
     z-index: 9999;
     background-color: var(--loderbg);
     padding: 25vh 10vw;
+    overflow: hidden;
 }
 
 .line{
     height: fit-content;
-    background-color: red;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vw;
+}
+
+#line1-part1 h5, #line1-part1 h6{
+    font-size: 2.8vw;
+    font-weight: 200;
+    font-family: "silk serif";
+}
+
+#line1-part1 h5{
+    width: 5vw;
+    text-align: right;
 }
 
 .line h1{
     font-size: 6.5vw;
-    font-weight: 600;
+    font-weight: 900;
     text-transform: uppercase;
+}
+
+.line h2{
+    font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    /* loaderAnime; */
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loaderAnime {
+    0% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+
+    48% {
+        font-family: "plain light";
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+
+    50% {
+        font-family: 'silk serif';
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 1;
+    }
+
+    100% {
+        font-family: 'silk serif';
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 500;
+        color: transparent;
+        opacity: 0;
+    }
+}
+
+.wait{
+    margin-top: 2rem;
+}
+
+.wait p{
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 main{
     position: relative;
-    background-color: var(--background);
+    background-color: var(--loderbg);
 }
 
 .page1{
