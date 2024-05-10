@@ -64,6 +64,18 @@ function loaderAnimations(){
         stagger:0.2,
     })
 
+    tl.from("#hero1 h4",{
+        opacity:0,
+        duration:0.5,
+    })
+
+    tl.from(".base h5",{
+        y:20,
+        opacity:0,
+        repeat: -1,
+        duration:1.5,
+    })
+
 }
 
 loaderAnimations();
@@ -81,6 +93,9 @@ function cursorAnimation(){
     });
     
     Shery.makeMagnet(".page1 .nav .nav-part2 h4", {
+    });
+
+    Shery.makeMagnet("#hero1 h4", {
     });
 }
 
