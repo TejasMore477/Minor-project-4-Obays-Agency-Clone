@@ -286,4 +286,93 @@ main{
     width: 100vw;
     background-color: var(--background);
     position: relative;
+    padding: 7vh 0;
+}
+
+.page4 .content {
+    width: 65vw;
+    margin-left: 28%;
+}
+
+.page4 .content .heading{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.page4 .content .heading h1{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+.heading h4{
+    content: "01";
+    color: white;
+    font-size: 2.3vw;
+    font-family: "silk serif";
+    margin-right: 2rem;
+    padding-bottom: 3rem;
+}
+.page4 .content .underline{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 5vw 0;
+}
+.page4 .content>p {
+    font-size: 1.55vw;
+    width: 50%;
+    margin-bottom: 3vw;
+}
+.page4_flex{
+    display: flex;
+    gap: 2vw;
+}
+.page4_flex img{
+    width: 48%;
+}
+.page4_flex .text>p{
+    width: 30%;
+    font-size: 0.9vw;
+    margin-bottom: 3vw;
+}
+.page4_blue_div{
+    background-color: #3F7DF4;
+    width: 30vw;
+    padding: 2vw;
+    position: relative;
+    margin-top: -35vh;
+    margin-left: 26vw;
+}
+.bluediv-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1.7vw 0;
+    border-bottom: 2px solid #ffffff9e;
+}
+.bluediv-elem h4{
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+.bluediv-elem p{
+    width: 40%;
+    font-size: 0.7vw;
+}
+.page4 .content .underline-end{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 5vw 0 2vw 0;
+}
+.page4 .content #text{
+    font-size: 1vw;
+}
+
+.page5{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    position: relative;
+    padding: 7vh 0;
 }
