@@ -13,7 +13,11 @@
 
 html, body{
     height: 100%;
-    width: 100%;
+    width: 100vw;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 #curser{
@@ -216,4 +220,70 @@ main{
     font-weight: 400;
     width: fit-content;
     overflow: hidden;
+}
+
+/*page 2*/
+.page2{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    position: relative;
+    padding-top: 15vh;
+}
+
+#video-container{
+    height: 60vh;
+    width: 60vw;
+    left: 39%;
+    position: relative;
+}
+
+#video-container #circle{
+    background-color: #FFA63D;
+    height: 6.5vw;
+    width: 6.5vw;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 999;
+    top: -10%;
+    left: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circle span i{
+    font-size: 2.3vw;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#video-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+}
+
+/*page 3*/
+
+.page3{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(155, 128, 92);
+    position: relative;
+}
+
+.page4{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--background);
+    position: relative;
 }
