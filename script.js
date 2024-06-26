@@ -99,5 +99,5 @@ function cursorAnimation(){
     });
 }
 
-cursorAnimation();
+// cursorAnimation();
 
