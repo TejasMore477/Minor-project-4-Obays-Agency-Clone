@@ -278,9 +278,265 @@ main{
 .page3{
     min-height: 100vh;
     width: 100vw;
-    background-color: rgb(155, 128, 92);
+    background-color: var(--background);
+    position: relative;
+    padding: 17vw 0vw;
+    /* background-color:yellow; */
+}
+
+.page3 .content {
+    width: 100vw;
+    /* background: greenyellow; */
+}
+
+.page3 .content .heading{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 65vw;
+    margin-left: 28%;
+}
+
+.page3 .content .heading h1{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7vw;
+}
+
+.heading h4{
+    content: "01";
+    color: white;
+    font-size: 2.3vw;
+    font-family: "silk serif";
+    margin-right: 2rem;
+    padding-bottom: 3rem;
+}
+
+.page3 .content>.underline{
+    height: 1px;
+    width: 65vw;
+    background-color: #fff;
+    margin: 5vw 0 5vw 28%;
+}
+
+.image-container { 
+    /* background-color: red; */
+    padding: 2.3vw 2.4vw 2.3vw 2.3vw;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-container .element {
+    width: 24vw;
+    margin: 5vw 0 0vw 0;
+}
+
+.image-container .element1 {
+    width:32vw;
+    margin: 0vw 0 5vw 0;
+    /* background-color: red; */
+}
+
+.image-container .element2 {
+    width:31vw;
+    margin: 7vw 0 5vw 0;
+}
+
+.image-container .element3 {
+    width:33vw;
+    margin: 0vw 0 5vw 0;
+}
+
+.image-container .element4{
+    width:22vw;
+    margin: -14vw 4vw 5vw 0;
+}
+
+.image-container .element5 {
+    width:33vw;
+    margin: 0vw 0 5vw 0;
+}
+
+.element1 .image-div{
+    height: 40vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.element2 .image-div{
+    height: 39vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.element3 .image-div{
+    height: 40vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.element5 .image-div{
+    height: 38vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.image-container h3{
+    font-size: 2.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 1.5vw 0;
+}
+
+.image-container p{
+    font-size: 1vw;
+}
+
+.image-container .bottom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1.5vw 0;
+}
+
+.image-div{
+    height: 29vw;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; 
+}
+
+.underlines{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin: 1.5vw 0;
+}
+
+.page3-circle1 {
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 30vw;
+    position: relative;
     position: relative;
 }
+.page3-circle2 {
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: -3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page3-circle3 {
+    height: 20vw;
+    width: 20vw;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 28vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.page3-circle1 svg {
+    height: 7vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.page3-circle2 svg{
+    rotate: -45deg;
+    height: 7vw;
+}
+
+.page3-circle3 svg{
+    rotate: -90deg;
+    height: 7vw;
+}
+
+.in-circle{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+    scale: 0;
+}
+
+.in-circle>p{
+    color: #000000;
+    font-size: 1vw;
+    text-align: center;
+    width: 65%;
+    font-weight: 500;
+    transition: all ease 0.6s;
+    transition-delay: 0.3s;
+    scale: 0;
+    opacity: 0;
+    opacity: 1;
+}
+.page3-circle1:hover .in-circle{
+    scale: 1;
+}
+.page3-circle1:hover p{
+    scale: 1;
+    opacity: 1;
+}
+.page3-circle2:hover .in-circle{
+    scale: 1;
+}
+.page3-circle2:hover p{
+    scale: 1;
+    opacity: 1;
+}
+.page3-circle3:hover .in-circle{
+    scale: 1;
+}
+.page3-circle3:hover p{
+    scale: 1;
+    opacity: 1;
+}
+/* .page3-circle1:hover .in-circle{
+    scale: 1;
+}
+.page3-circle1:hover p{
+    scale: 1;
+} */
+
 
                                             /*page 4*/
 
@@ -494,7 +750,6 @@ footer .content .footer-div{
 
 footer .content .box{
     width: 30%;
-    /* background-color: red; */
 }
 
 .footer-div h5{
@@ -510,4 +765,9 @@ footer .content .box{
 
 footer p {
     font-size: 0.9vw;
+}
+
+._canvas_container {
+    z-index: 999999 !important;
+    pointer-events: none;
 }
