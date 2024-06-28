@@ -190,17 +190,19 @@ function loaderAnimations(){
 }
 
 function cursorAnimation(){
-    document.addEventListener("mousemove", (position) => {
-        gsap.to("#curser",{
-            left:position.x,
-            top:position.y,
-        })
-    })
+    Shery.mouseFollower({
+        skew:true,
+        ease:"cubic-bezier(0.23, 1, 0.320, 1)",
+        duration:1,
+    });
     
     Shery.makeMagnet(".page1 .nav .nav-part1 svg", {
     });
     
     Shery.makeMagnet(".page1 .nav .nav-part2 h4", {
+    });
+
+    Shery.makeMagnet(".in-circle p", {
     });
 
 }

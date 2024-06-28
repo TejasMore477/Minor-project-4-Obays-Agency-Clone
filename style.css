@@ -19,17 +19,6 @@ html, body{
 body{
     overflow-x: hidden;
 }
-                                        /*curser*/
-#curser{
-    height: 3.1vw;
-    width: 3.1vw;
-    border-radius: 50%;
-    background-color: white;
-    position: fixed;
-    z-index: 99 !important;
-    mix-blend-mode: difference;
-    transform: translate(-50%,-50%);
-}
                                         /*loader*/
 #loader{
     height: 100%;
