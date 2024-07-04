@@ -222,21 +222,26 @@ main{
 }
 
 #video-container{
-    height: 60vh;
-    width: 60vw;
-    left: 39%;
+    height: 66vh;
+    width: 72vw;
+    left: 28%;
     position: relative;
+    background: url(./Assets/images/Showreel-2022-preview-1.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #video-container #circle{
     background-color: #FFA63D;
-    height: 6.5vw;
-    width: 6.5vw;
+    height: 9vw;
+    width: 9vw;
     position: absolute;
     border-radius: 50%;
     z-index: 999;
-    top: -10%;
-    left: 80%;
+    top: -15%;
+    left: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,16 +256,21 @@ main{
     width: 100%;
     object-fit: cover;
     object-position: center;
+    opacity: 0;
 }
 
-#video-container img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: absolute;
-    top: 0;
+#video-container #pause{
+    display: none;
 }
+
+.active{
+    display: block;
+}
+
+.inactive{
+    display: none;
+}
+
 
                                             /*page 3*/
 
