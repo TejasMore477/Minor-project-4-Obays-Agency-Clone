@@ -211,6 +211,16 @@ main{
     overflow: hidden;
 }
 
+.page1 #flag{
+    width: 14vw;
+    height: 22vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
                                         /*page 2*/
 
 .page2{
@@ -225,7 +235,7 @@ main{
     height: 66vh;
     width: 72vw;
     left: 28%;
-    position: relative;
+    position: relative !important;
     background: url(./Assets/images/Showreel-2022-preview-1.jpg);
     background-position: center;
     background-repeat: none;
@@ -237,7 +247,7 @@ main{
     background-color: #FFA63D;
     height: 9vw;
     width: 9vw;
-    position: absolute;
+    position: absolute !important;
     border-radius: 50%;
     z-index: 999;
     top: -15%;

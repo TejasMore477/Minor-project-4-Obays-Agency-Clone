@@ -92,33 +92,6 @@ function loaderAnimations() {
     });
 }
 
-// function cursorAnimation() {
-//     Shery.mouseFollower({
-//         skew: true,
-//         ease: "cubic-bezier(0.23, 1, 0.32, 1)",
-//         duration: 1,
-//     });
-
-//     const magnets = [
-//         ".page1 .nav .nav-part1 svg",
-//         ".page1 .nav .nav-part2 h4",
-//         ".in-circle p"
-//     ];
-    
-//     magnets.forEach(selector => Shery.makeMagnet(selector));
-
-//     const videoContainer = document.querySelector(".page2 #video-container");
-    
-//     if (videoContainer) {
-//         videoContainer.addEventListener("mouseenter", () => {
-//             videoContainer.addEventListener("mousemove", (dets) => {
-//                 gsap.to(".mousefollower", { opacity: 0 });
-//                 gsap.to("#circle", { x: dets.x - 1100, y: dets.y + 100 });
-//             });
-//         });
-//     }
-// }
-
 function cursorAnimation() {
     Shery.mouseFollower({
         skew: true,
@@ -168,6 +141,11 @@ function cursorAnimation() {
 
         videoContainer.addEventListener("mouseleave", () => {
             gsap.to(".mousefollower", { opacity: 1});
+            gsap.to("#video-container #circle", { 
+                x: "0",
+                y: "0",
+
+            });
         });
 
         videoContainer.addEventListener("click", () => {
@@ -182,7 +160,6 @@ function cursorAnimation() {
         });
     }
 }
-
 
 function sheryanimations() {
     Shery.imageEffect(".image-div", {
@@ -221,6 +198,25 @@ function sheryanimations() {
         gooey: true,
     });
 }
+
+document.addEventListener("mousemove",(det)=>{
+    gsap.to("#flag", {
+        x: det.clientX - 755,
+        y: det.clientY - 390,
+    });
+})
+
+document.querySelector("#hero3").addEventListener("mouseenter", ()=>{
+    gsap.to("#flag", {
+        opacity:1,
+    });
+});
+
+document.querySelector("#hero3").addEventListener("mouseleave", ()=>{
+    gsap.to("#flag", {
+        opacity:0,
+    });
+});
 
 // Initialize all animations and interactions
 function init() {
