@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./Assets/images/favicon.png" type="image/x-icon">
     <title>Obays Agency | Clone</title>
+    <!-- remix-icon -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- locomotive.js css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <!-- shery.js css` -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="style.css">
 
@@ -34,7 +37,7 @@
         </div>
     </div>
 
-    <main>
+    <div class="main">
         <div class="page1" data-scroll>
             <div class="nav">
 
@@ -112,15 +115,15 @@
 
         <div class="page3" data-scroll>
             <div class="content">
-                <div class="heading">
+                <div class="heading" data-scroll-speed="2">
                     <h4>02</h4>
                     <h1>our projects</h1>
                 </div>
                 <div class="underline"></div>
-                <div class="image-container">
-                    <div class="element">
+                <div class="image-container" data-scroll-speed="2">
+                    <div class="element" data-scroll-speed="2.5">
                         <h3>ogla prudka</h3>
-                        <div class="image-div">
+                        <div class="image-div"data-scroll-speed="0.5">
                             <img src="./Assets/images/img1-1.jpg" alt="">
                             <img src="./Assets/images/img1-2.webp" alt="">
                         </div>
@@ -132,9 +135,9 @@
                         <div class="underlines"></div>
                     </div>
 
-                    <div class="element1">
+                    <div class="element1" data-scroll-speed="2.5">
                         <h3>aim</h3>
-                        <div class="image-div">
+                        <div class="image-div" data-scroll-speed="0.5">
                             <img src="./Assets/images/AIM-1.png" alt="">
                             <img src="./Assets/images/lea-l-4N6qT784t3A-unsplash.jpg" alt="">
                         </div>
@@ -163,9 +166,9 @@
                         </div>
                     </div>
 
-                    <div class="element2">
+                    <div class="element2" data-scroll-speed="2.5">
                         <h3>ochi</h3>
-                        <div class="image-div">
+                        <div class="image-div" data-scroll-speed="0.5">
                             <img src="./Assets/images/img2-1.jpg" alt="">
                             <img src="./Assets/images/img2-2.jpg" alt="">
                         </div>
@@ -177,9 +180,9 @@
                         <div class="underlines"></div>
                     </div>
 
-                    <div class="element3">
+                    <div class="element3" data-scroll-speed="2.5">
                         <h3>David Laxer</h3>
-                        <div class="image-div">
+                        <div class="image-div" data-scroll-speed="0.5">
                             <img src="./Assets/images/img4-1.jpg" alt="">
                             <img src="./Assets/images/img4-2.jpg" alt="">
                         </div>
@@ -191,9 +194,9 @@
                         <div class="underlines"></div>
                     </div>
 
-                    <div class="element4">
+                    <div class="element4" data-scroll-speed="2.5">
                         <h3>eminente</h3>
-                        <div class="image-div">
+                        <div class="image-div" data-scroll-speed="0.5">
                             <img src="./Assets/images/img5-1.png" alt="">
                             <img src="./Assets/images/img5-2.jpg" alt="">
                         </div>
@@ -214,9 +217,9 @@
                         </div>
                     </div>
 
-                    <div class="element5">
+                    <div class="element5" data-scroll-speed="2.5">
                         <h3>makhno</h3>
-                        <div class="image-div">
+                        <div class="image-div" data-scroll-speed="0.5">
                             <img src="./Assets/images/img6-1.png" alt="">
                             <img src="./Assets/images/img6-2.jpg" alt="">
                         </div>
@@ -233,7 +236,7 @@
 
         <div class="page4" data-scroll>
             <div class="content">
-                <div class="heading">
+                <div class="heading" data-scroll-speed="2.5">
                     <h4>04</h4>
                     <h1>about obays</h1>
                 </div>
@@ -241,13 +244,13 @@
                 <p>Our agency is about people who love   creating, designing and developing   wow projects. In the same time we are   a boutique agency that is more than the collective. We learn and grow, win and celebrate together.</p>
                 <div class="page4_flex">
                     <img src="./Assets/images/content-image01.jpg" alt=".">
-                    <div class="text">
+                    <div class="text" data-scroll-speed="2.5">
                         <p>We are happy to present our new website and updated version of Obys agency. As before we are open for new projects worldwide!</p>
                         <p>Would you like to have award winning site or unique branding style, please say hi to our manager —info@obys.agency.
                             And we will help you with the pleasure.</p>
                     </div>
                 </div>
-                <div class="page4_blue_div">
+                <div class="page4_blue_div" data-scroll-speed="1">
                     <div class="bluediv-elem">
                         <h4>Awwwards x16</h4>
                         <p>SOTM, SOTD and Honrable Mentions</p>
@@ -295,9 +298,9 @@
 
         <footer data-scroll>
             <div class="content">
-                <div class="heading">
+                <div class="heading" data-scroll-speed="2">
                     <h4>04</h4>
-                    <h1>let's create</h1>
+                    <h1 id="textanimes">let's create</h1>
                 </div>
                 <div class="underline"></div>
                 <div class="footer-div">
@@ -326,15 +329,17 @@
             </div>
         </footer>
         
-    </main>
-
+    </div>
+    <!-- Locomotive Scroll -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- GSAP and GSAP Plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Three.js is needed for 3d Effects -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
     <!-- ControlKit is needed for Debug Panel -->
     <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <!-- Shery.js -->
     <script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
     <script src="script2.js"></script>
 </body>

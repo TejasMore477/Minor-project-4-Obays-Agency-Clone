@@ -115,7 +115,7 @@ body{
     font-weight: 500;
 }
 
-main{
+.main{
     position: relative;
     background-color: var(--loderbg);
 }
@@ -212,8 +212,8 @@ main{
 }
 
 .page1 #flag{
-    width: 14vw;
-    height: 22vw;
+    width: 13vw;
+    height: 19vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -290,12 +290,10 @@ main{
     background-color: var(--background);
     position: relative;
     padding: 17vw 0vw;
-    /* background-color:yellow; */
 }
 
 .page3 .content {
     width: 100vw;
-    /* background: greenyellow; */
 }
 
 .page3 .content .heading{
@@ -324,13 +322,12 @@ main{
 
 .page3 .content>.underline{
     height: 1px;
-    width: 65vw;
+    width: 67vw;
     background-color: #fff;
     margin: 5vw 0 5vw 28%;
 }
 
 .image-container { 
-    /* background-color: red; */
     padding: 2.3vw 2.4vw 2.3vw 2.3vw;
     position: relative;
     display: flex;
@@ -347,7 +344,6 @@ main{
 .image-container .element1 {
     width:32vw;
     margin: 0vw 0 5vw 0;
-    /* background-color: red; */
 }
 
 .image-container .element2 {
@@ -539,12 +535,6 @@ main{
     scale: 1;
     opacity: 1;
 }
-/* .page3-circle1:hover .in-circle{
-    scale: 1;
-}
-.page3-circle1:hover p{
-    scale: 1;
-} */
 
 
                                             /*page 4*/
