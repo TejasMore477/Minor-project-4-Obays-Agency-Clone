@@ -1012,6 +1012,66 @@ footer p {
 .page4 .content #text{
     font-size: 5vw;
 }
+                                            /*page 5*/
+.page5{
+    min-height: 30vh;
+    padding:10vw 0;
+}
 
-    
+.elem h1 , .elem2 h1{
+    font-size: 11vw;
+    animation-duration: 20s;
+}
+
+
+                                       /*footer*/
+
+footer{
+    min-height: 70vh;
+    width: 100vw;
+    padding: 5vw 0;
+}
+
+footer .content {
+    width: 100vw;
+    margin-left: 0%;
+    padding: 8%;
+}
+
+footer .heading{
+    flex-direction: column;
+    align-items: start;
+}
+
+footer .heading h1{
+    font-size: 11vw;
+}
+
+footer .content .underline , footer .content .underline-end{
+    margin: 10vw 0 10vw 0;
+}
+
+footer .content .footer-div{
+    padding: 4vw 15vw 0 0;
+    flex-direction: column;
+}
+
+footer .content .box{
+    width: 100%;
+}
+
+.footer-div h5{
+    font-size: 7vw;
+}
+
+.footer-div h6{
+    font-size: 5vw;
+    margin: 4vh 0 4vh 0;
+    font-weight: 500;
+}
+
+footer p {
+    font-size: 5vw;
+}
+
 }
