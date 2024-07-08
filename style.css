@@ -772,9 +772,9 @@ footer p {
 }
 
 @media (max-width: 600px) {
+                                        /*page 1*/
     .page1{
         height: 58vh;
-        background-color: rgb(87, 11, 11);
         padding-top: 1px;
     }
     
@@ -830,5 +830,30 @@ footer p {
     .base h5{
         font-size: 0.7rem;
     }
+
+                                        /*page 2*/
+    
+    .page2{
+        height: 58vh;
+        padding-top: 5vh;
+
+    }
+    
+    #video-container{
+        height: 48vh;
+        width: 100vw;
+        left: 0;
+    }
+    
+    #video-container #circle{
+        background-color: #FFA63D;
+        height: 27vw;
+        width: 27vw;
+        left: 60%;
+    }
+    
+    #circle span i{
+        font-size: 9.3vw;
+    }                               
 
 }
