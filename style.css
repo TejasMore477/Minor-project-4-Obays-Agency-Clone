@@ -770,3 +770,65 @@ footer p {
     z-index: 999999 !important;
     pointer-events: none;
 }
+
+@media (max-width: 600px) {
+    .page1{
+        height: 58vh;
+        background-color: rgb(87, 11, 11);
+        padding-top: 1px;
+    }
+    
+    .page1 .nav{
+        padding: 5vw 5.5vw 0  5.5vw;
+        position: fixed;
+        top:0;
+        width: 100vw;
+    }
+    
+    .nav-part1{
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .nav-part2 {
+        display: none;
+    }
+    
+    .nav-part1 svg:nth-child(1) {
+        height: 0.9rem;
+        width: 0.9rem;
+    }
+    
+    .nav-part1 .description{
+        display: none;
+    }
+    
+    .hero{
+        margin-left: 6%;
+        align-items: start;
+    }
+    
+    .hero:nth-child(2){
+        flex-direction: column;
+        margin-top: 19vh;
+    }
+    
+    .hero h1, .hero h2, .hero h3{
+        font-size: 11vw;
+        line-height: 11vw;
+    }
+    
+    #hero3 h2{
+        border-bottom: solid white 0.2rem;
+    }
+    
+    #hero1 h4{
+        font-size: 5.5vw;
+        padding-bottom: 0;
+    }
+    
+    .base h5{
+        font-size: 0.7rem;
+    }
+
+}
