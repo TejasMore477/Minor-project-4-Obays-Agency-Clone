@@ -63,7 +63,7 @@ function loaderAnimations() {
     })
     .from(".page1", {
         delay: 0.2,
-        y: 1600,
+        y: 3000,
         opacity: 0,
         duration: 0.5,
         ease: "power4.out",

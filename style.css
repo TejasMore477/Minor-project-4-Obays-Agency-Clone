@@ -772,7 +772,44 @@ footer p {
 }
 
 @media (max-width: 600px) {
+
+                                            /*loader*/
+#loader{
+    height: 100vh;
+    width: 100vw;
+    z-index: 99999;
+}
+
+.line{
+    flex-direction: column;
+    align-items: start;
+}
+
+#line1-part1{
+    gap: 6vw;
+}
+
+#line1-part1 h5, #line1-part1 h6{
+    font-size: 6vw;
+}
+
+.line h1{
+    font-size: 10vw;
+}
+
+.line h2{
+    height: 4rem;
+    font-size: 8.5vw;
+}
+
+.wait{
+    height: 3rem;
+    margin-top: 3rem;
+}
+
+
                                         /*page 1*/
+                                        
     .page1{
         height: 58vh;
         padding-top: 1px;
@@ -836,7 +873,6 @@ footer p {
     .page2{
         height: 60vh;
         padding-top: 5vh;
-
     }
     
     #video-container{
@@ -870,7 +906,8 @@ footer p {
         flex-direction: column;
         align-items: start;
         width: 100vw;
-        margin-left: 7%;
+        margin-left: 0;
+        padding-left: 7%;
     }
     
     .page3 .content .heading h1{
