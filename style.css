@@ -897,7 +897,7 @@ footer p {
         width: 100vw;
         height: 75vh;
         padding: 0 7%;
-        margin: 8vw 0;
+        margin: 9vw 0;
     }
     
     .element0 .image-div{
@@ -929,5 +929,89 @@ footer p {
     .page3-circle3 {
         display:none;
     }
+
+                                        /*page 4*/
+
+.page4{
+    min-height: 100vh;
+}
+
+.page4 .content {
+    width: 100vw;
+    margin: 0;
+    padding: 0 7vw;
+}
+
+.page4 .content .heading{
+    flex-direction: column;
+    align-items: start;
+}
+
+.page4 .content .heading h1{
+    font-size: 10.5vw;
+    line-height: 10vw;
+}
+
+.heading h4{
+    font-size: 5vw;
+    padding-bottom: 1rem;
+}
+
+.page4 .content .underline{
+    margin: 10vw 0 16vw 0;
+}
+
+.page4 .content>p {
+    font-size: 6vw;
+    font-weight: 600;
+    width: 100%;
+    margin-bottom: 10vw;
+}
+
+.page4_flex{
+    flex-direction: column-reverse;
+}
+
+.page4_flex img{
+    width: 100%;
+}
+
+.page4_flex .text>p{
+    width: 100%;
+    font-size: 4.5vw;
+    margin-bottom: 6vw;
+}
+
+.page4_blue_div{
+    width: 86vw;
+    height: max-content;
+    transform: translate(-50% -50%);
+    margin:0%; 
+    padding: 10vw 7vw;
+}
+
+.bluediv-elem{
+    padding: 10vw 0;
+}
+
+.bluediv-elem h4{
+    width: 40%;
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+.bluediv-elem p{
+    width: 50%;
+    font-size: 4.5vw;
+}
+
+.page4 .content .underline-end{
+    margin: 20vw 0 2vw 0;
+}
+
+.page4 .content #text{
+    font-size: 5vw;
+}
+
     
 }
