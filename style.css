@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "Plain Light";
+    src: url(./Assets/fonts/plain-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: "plain light";
+    src: url(./Assets/fonts/plain-light-webfont.ttf);
+}
+
+@font-face {
+    font-family: "silk serif";
+    src: url(./Assets/fonts/silkserif-regularitalic-webfont.ttf);
+}
+
 :root{
     --background:#151515;
     --loderbg:#000000;
