@@ -221,6 +221,18 @@ function flagAnimation(){
     
 }
 
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#js-scroll'),
+    smooth: true,
+    smartphone: {
+      smooth: true
+    },
+    tablet: {
+      smooth: true
+    }
+  });
+  
+
 // Initialize all animations and interactions
 function init() {
     loaderAnimations();
