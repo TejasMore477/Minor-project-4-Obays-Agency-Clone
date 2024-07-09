@@ -968,7 +968,9 @@ footer p {
 }
 
 @media (max-width: 600px) {
-
+    body{
+        overflow-x: auto;
+    }
                                             /*loader*/
 #loader{
     height: 100vh;
