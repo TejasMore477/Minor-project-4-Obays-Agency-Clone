@@ -58,7 +58,7 @@ function loaderAnimations() {
     })
     .to('#loader', {
         opacity: 0,
-        duration: 0.4,
+        duration: 1.6,
         delay: 0,
     })
     .from(".page1", {
@@ -220,17 +220,6 @@ function flagAnimation(){
     });
     
 }
-
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('#js-scroll'),
-    smooth: true,
-    smartphone: {
-      smooth: true
-    },
-    tablet: {
-      smooth: true
-    }
-  });
   
 
 // Initialize all animations and interactions
